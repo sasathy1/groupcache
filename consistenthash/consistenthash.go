@@ -79,3 +79,7 @@ func (m *Map) Get(key string) string {
 
 	return m.hashMap[m.keys[idx]]
 }
+
+func (m *Map) GetMap() map[int]string {
+	return m.hashMap
+}
